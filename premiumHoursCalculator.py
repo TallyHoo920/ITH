@@ -110,7 +110,7 @@ def premiumHoursCalculator(totalHours, premiumHours):
     if totalHours in [1, 2, 3, 4, 5, 8, 9]:
         return specialCaseCheck()
     
-    if premiumHours < bCellValue:
+    elif premiumHours < bCellValue:
         return bonus(0)
     
     elif premiumHours < cCellValue:
